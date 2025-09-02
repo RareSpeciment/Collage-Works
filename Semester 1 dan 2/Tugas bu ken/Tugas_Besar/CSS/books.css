@@ -1,0 +1,404 @@
+html,
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.books-container {
+    overscroll-behavior: contain;
+    overflow-x: auto;
+    touch-action: none;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.books-container::-webkit-scrollbar {
+    display: none;
+}
+
+.books-content {
+    padding: 40px 0 80px 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.books-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 32px;
+    padding: 0 40px;
+    transform: translateX(0px);
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+}
+
+.extra-card {
+    flex-shrink: 0;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    margin: 30px 40px;
+    gap: 15px;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background: #f5f6fa;
+    width: 250px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #3498db;
+}
+
+.search-icon-btn {
+    background: #3498db;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-icon-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.search-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: none;
+    position: relative;
+}
+
+.search-icon::before,
+.search-icon::after {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+.search-icon::before {
+    top: 7px;
+    height: 3px;
+    width: 22px;
+    transform: rotate(45deg);
+}
+
+.search-icon::after {
+    top: 14px;
+    height: 3px;
+    width: 22px;
+    transform: rotate(-45deg);
+}
+
+.book-card {
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    border-radius: 20px;
+    width: 200px;
+    min-width: 180px;
+    padding: 20px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-image {
+    width: 140px;
+    height: 140px;
+    background: #ffffff;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.book-image:hover {
+    transform: scale(1.05);
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 10px 15px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin: 0 15px 10px 15px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.book-date {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    opacity: 0.8;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 0;
+    transition: color 0.2s;
+}
+
+.delete-form {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: rgba(231, 76, 60, 0.1);
+    color: #c0392b;
+}
+
+.delete-text {
+    color: #e74c3c;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.delete-text:hover {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .books-row {
+        gap: 18px;
+        margin-left: 10px;
+    }
+
+    .search-bar-container {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .books-row {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .search-bar-container {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .book-card {
+        width: 140px;
+        min-width: 120px;
+        padding: 12px 0 8px 0;
+    }
+
+    .book-image {
+        width: 90px;
+        height: 90px;
+    }
+}
+/* Styling for the Upload Book form */
+.books-content form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.books-content form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.books-content form input[type="text"],
+.books-content form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.books-content form input[type="text"]:focus,
+.books-content form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    outline: none;
+}
+
+.books-content form input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px dashed #e0e0e0;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.books-content form button[type="submit"] {
+    background: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.books-content form button[type="submit"]:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+.books-content p {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.books-content p:not([class*="error"]) {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.books-content p[class*="error"] {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+button,
+.search-bar-container button {
+    background: linear-gradient(135deg, #8a2be2, #9932cc);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover,
+.search-bar-container button:hover {
+    background: linear-gradient(135deg, #9932cc, #8a2be2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+button:focus,
+.search-bar-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+}
+
+.search-bar-container button a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: inherit;
+}
+
+.search-bar-container button a::before {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: bold;
+}

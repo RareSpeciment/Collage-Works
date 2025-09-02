@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset beberapa gaya default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        
+        
+          /* Kontainer utama */
+          .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          /* Bagian poster/gambar di sisi kiri */
+          .poster {
+            flex: 0 0 300px; /* Lebar tetap poster */
+            max-width: 300px;
+          }
+        
+          .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          /* Bagian teks di sisi kanan */
+          .info {
+            flex: 1;
+            padding: 20px;
+          }
+        
+          .info-section {
+            margin-bottom: 20px;
+          }
+        
+          .info-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 5px;
+          }
+        
+          .info-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        
+          /* Responsif untuk layar lebih kecil */
+          @media (max-width: 768px) {
+            .container {
+              flex-direction: column;
+            }
+            .poster {
+              max-width: 100%;
+            }
+            .info {
+              padding: 15px;
+            }
+          }
+        </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+    <title>Ghilbiverse</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+      <a href="../html/index.html">Beranda</a>
+      <a href="../html/film.html">Film</a>
+      <a href="../html/AboutStudio.html">About Studio</a>
+      <a href="../html/Creator.html">Creator & Staff</a>
+      <a href="../html/aboutme.html">Tentang Kami</a>
+      <a href="../feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Bagian poster/gambar di sisi kiri -->
+            <div class="poster">
+              <img src="https://cdn.myanimelist.net/images/anime/8/52353.jpg" alt="Poster Anime" />
+            </div>
+        
+            <!-- Bagian teks (sinopsis, background, dll) di sisi kanan -->
+            <div class="info">
+              <div class="info-section">
+                <h2>Sinopsis</h2>
+                <p>
+                    Meskipun rabun jauh yang diderita Jirou Horikoshi membuatnya tidak bisa menjadi seorang pilot, ia meninggalkan kampung halamannya untuk belajar teknik penerbangan di Universitas Kekaisaran Tokyo dengan satu tujuan sederhana: merancang dan membangun pesawat seperti pahlawannya, perintis pesawat terbang asal Italia, Giovanni Battista Caproni. Kedatangannya di ibu kota bertepatan dengan Gempa Bumi Besar Kanto pada tahun 1923, di mana ia menyelamatkan seorang pembantu yang melayani keluarga seorang gadis muda bernama Naoko Satomi; peristiwa bencana ini menandai dimulainya lebih dari dua dekade keresahan sosial dan ketidaknyamanan yang mengarah pada menyerahnya Jepang pada Perang Dunia II.
+                </p><br>
+                <p>
+                    Bagi Jirou, tahun-tahun menjelang produksi pesawat tempur Mitsubishi A6M Zero yang terkenal itu akan menguji setiap serat keberadaannya. Berbagai perjalanan dan pengalaman hidupnya hanya mendorongnya untuk terus maju-bahkan ketika ia menyadari peran karyanya dalam perang dan kenyataan pahit dalam kehidupan pribadinya. Seiring berjalannya waktu, dia harus menghadapi pertanyaan yang mustahil: berapa harga yang harus dibayar untuk mengejar mimpinya yang indah?
+                </p>
+              </div>
+              <div class="info-section">
+                <h2>Background</h2>
+                <p>
+                    Sebelum dirilis, sutradara Miyazaki Hayao menyatakan bahwa Kaze Tachinu akan menjadi film terakhirnya. Seperti kebanyakan film Miyazaki lainnya, film ini merupakan film terlaris pada tahun perilisannya, menghasilkan $113 juta di box office domestik pada tahun 2013. Film ini menjadi kontroversi di kedua sisi spektrum politik karena penggambarannya yang simpatik terhadap Horikoshi dan sikapnya yang dianggap anti-perang. Film ini dinominasikan untuk Academy Award, nominasi ketiga bagi Miyazaki.
+                <p><br>
+                <p>
+                    Film ini telah memenangkan beberapa penghargaan. Pada tahun 2013, film ini memenangkan Fitur Animasi Terbaik di ajang Alliance of Women Film Journalists, di ajang New York Film Critics Online, di ajang Online Film Critics Society, di ajang San Fransisco Film Critics Circle, dan di ajang Toronto Film Critics Association. Juga pada tahun 2013, film ini memenangkan Film Animasi Terbaik di Boston Online Film Critics Association (yang disejajarkan dengan Frozen), di Boston Society of Film Critics, di Chicago Film Critics Association, di New York Film Critics Circle, dan di San Diego Film Critics Society. Pada tahun yang sama, film ini memenangkan Audience Favorite - Animation di Mill Valley Film Festival dan Film Keluarga Terbaik di Women Film Critics Circle. Pada tahun 2014, film ini memenangkan Animation of the Year di Japan Academy Prize, Film Animasi Terbaik di National Board of Review, dan Film Terbaik, Animasi atau Media Campuran di Satellite Awards.
+                </p>
+              </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse Indonesia
+    </footer>
+
+</body>
+</html>

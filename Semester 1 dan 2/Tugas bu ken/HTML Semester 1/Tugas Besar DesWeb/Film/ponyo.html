@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset beberapa gaya default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        
+        
+          /* Kontainer utama */
+          .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          /* Bagian poster/gambar di sisi kiri */
+          .poster {
+            flex: 0 0 300px; /* Lebar tetap poster */
+            max-width: 300px;
+          }
+        
+          .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          /* Bagian teks di sisi kanan */
+          .info {
+            flex: 1;
+            padding: 20px;
+          }
+        
+          .info-section {
+            margin-bottom: 20px;
+          }
+        
+          .info-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 5px;
+          }
+        
+          .info-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        
+          /* Responsif untuk layar lebih kecil */
+          @media (max-width: 768px) {
+            .container {
+              flex-direction: column;
+            }
+            .poster {
+              max-width: 100%;
+            }
+            .info {
+              padding: 15px;
+            }
+          }
+        </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+    <title>Ghilbiverse</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+      <a href="../html/index.html">Beranda</a>
+      <a href="../html/film.html">Film</a>
+      <a href="../html/AboutStudio.html">About Studio</a>
+      <a href="../html/Creator.html">Creator & Staff</a>
+      <a href="../html/aboutme.html">Tentang Kami</a>
+      <a href="../feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Bagian poster/gambar di sisi kiri -->
+            <div class="poster">
+              <img src="https://cdn.myanimelist.net/images/anime/1331/138727.jpg" alt="Poster Anime" />
+            </div>
+        
+            <!-- Bagian teks (sinopsis, background, dll) di sisi kanan -->
+            <div class="info">
+              <div class="info-section">
+                <h2>Sinopsis</h2>
+                <p>
+                    A goldfish sneaks away from home and floats off on the back of a jellyfish. After getting stuck in a glass jar, she drifts to the shore where she is freed by Sousuke, a five-year-old boy who lives with his mother Lisa in a house by the sea while his father Koichi works on a fishing boat. After healing a cut on Sousuke's finger by licking it, the goldfish is named Ponyo by her new friend.
+
+                </p><br>
+                <p>
+                    Tanpa sepengetahuan Sousuke, Ponyo sudah memiliki nama dan keluarga. Ayahnya, Fujimoto, seorang penyihir yang meninggalkan kemanusiaannya untuk hidup di bawah air, dengan panik mencari putrinya, Brunhilde. Ketika ditemukan dan ditangkap, Ponyo menolak nama lahirnya dan menyatakan bahwa dia ingin menjadi manusia. Dengan menggunakan kekuatan yang diterima dari darah Sousuke, dia menumbuhkan lengan dan kaki dan melarikan diri ke permukaan sekali lagi. Namun, sihir yang dilepaskan ke lautan menyebabkan ketidakseimbangan di alam, menyebabkan Bulan mulai jatuh dari orbitnya dan ombak semakin kuat. Bertemu kembali dengan Ponyo, Sousuke harus melewati ujian kuno untuk memulihkan ketertiban di dunia dan membiarkan rekannya hidup sebagai manusia.
+
+                </p>
+              </div>
+              <div class="info-section">
+                <h2>Background</h2>
+                <p>
+                    Gake no Ue no Ponyo- film animasi ke-8 Miyazaki bersama Studio Ghibli - meraup lebih dari $201 juta USD di seluruh dunia. Film ini terdiri dari lebih dari 170.000 frame.
+                </p>
+                    Pada tahun 2009, film ini menang dalam lima kategori di penghargaan Anime Tahunan Tokyo ke-8. Film ini juga dianugerahi Penghargaan Akademi Jepang ke-32 untuk Animasi Tahun Ini dan Pencapaian Musik yang Luar Biasa.
+                </p>
+                <p>
+                    Banyak aspek dari Ponyo yang diambil dari kehidupan sehari-hari. Desa tepi pantai, misalnya, didasarkan pada Tomonoura, Jepang, dengan beberapa bagian yang terinspirasi oleh Die Walküre karya Richard Wagner. Karakter utamanya, Sosuke, juga dinamai sesuai dengan tokoh dalam novel The Gate karya Natsume Soseki.
+                </p>
+              </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse Indonesia
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Hallo Welcome to my page</title>
+    <script src="1124028_RaffaelDavidYauson_LatihanJava.js"></script>
+</head>
+
+<body>
+    <p id="no1"></p>
+    <script type="text/javascript">
+        let value = (30 + 25) + ((35 - 14) * 2);
+        document.getElementById("no1").innerHTML = "1. Hasil : " + value;
+    </script>
+
+    <table border = 1 width = "50%">
+        <tr>
+            <p>2. </p>
+            <td align="center">Input</td>
+            <td align="center">Output</td>
+        </tr>
+
+        <tr>
+            <td align="center"><p id="no2"></p><p id="no22"></p></td>
+            <td align="center"><p id="output1"></p></td>
+        </tr>
+        <script type="text/javascript">
+            let value1 = 10;
+            let value2 = 20;
+            let hasil1;
+
+            if(value1 > value2){
+                hasil1 = value1;
+            }else{
+                hasil1 = value2;
+            }
+            document.getElementById("no2").innerHTML =  value1;
+            document.getElementById("no22").innerHTML =  value2;
+            document.getElementById("output1").innerHTML = hasil1;
+        </script>
+    </table>
+
+    <p id="konversi"></p>
+    <script type="text/javascript">
+        let celc = 30;
+        let fahr = 86;
+        let go = toFahrenhite();
+        let back = toCelcius();
+
+        function toFahrenhite(fahr){
+            return (9/5 * celc) + 32;
+        }
+
+        function toCelcius(celc){
+            return (5/9) * (fahr - 32);
+        }
+        document.getElementById("konversi").innerHTML = "3. Hasil Konfersi Farenhite : " + go + " Hasil Konfersi balik : " + back;
+    </script>
+
+
+
+    <table border = 1 width = "25%">
+        <tr>
+            <td>No 4 i dont know no more.</td>
+            <td align="center" id="nomor"></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        function displayNumbers() {
+            let output = "";
+            let i = 1;
+            do {
+                output += i + "<br>";
+                i++;
+            } while (i <= 20);
+            document.getElementById("nomor").innerHTML = output;
+        }
+        displayNumbers();
+    </script>
+
+
+
+    <div id="output"></div>
+    <script type="text/javascript">
+        const myArray = [10, 20, 30, 40, 50, "Hello", "World", true, null];
+
+        function printArrayElements() {
+            let output = "";
+            for (let i = 0; i < myArray.length; i++) {
+                output += myArray[i] + " ";
+            }
+            document.getElementById("output").innerHTML = "5. " + output;
+        }
+        printArrayElements();
+    </script>
+</body>
+</html>

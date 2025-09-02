@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset beberapa gaya default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        
+        
+          /* Kontainer utama */
+          .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          /* Bagian poster/gambar di sisi kiri */
+          .poster {
+            flex: 0 0 300px; /* Lebar tetap poster */
+            max-width: 300px;
+          }
+        
+          .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          /* Bagian teks di sisi kanan */
+          .info {
+            flex: 1;
+            padding: 20px;
+          }
+        
+          .info-section {
+            margin-bottom: 20px;
+          }
+        
+          .info-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 5px;
+          }
+        
+          .info-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        
+          /* Responsif untuk layar lebih kecil */
+          @media (max-width: 768px) {
+            .container {
+              flex-direction: column;
+            }
+            .poster {
+              max-width: 100%;
+            }
+            .info {
+              padding: 15px;
+            }
+          }
+        </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+    <title>Ghilbiverse</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+      <a href="../html/index.html">Beranda</a>
+      <a href="../html/film.html">Film</a>
+      <a href="../html/AboutStudio.html">About Studio</a>
+      <a href="../html/Creator.html">Creator & Staff</a>
+      <a href="../html/aboutme.html">Tentang Kami</a>
+      <a href="../feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Bagian poster/gambar di sisi kiri -->
+            <div class="poster">
+              <img src="https://cdn.myanimelist.net/images/anime/1355/147277.jpg" alt="Poster Anime" />
+            </div>
+        
+            <!-- Bagian teks (sinopsis, background, dll) di sisi kanan -->
+            <div class="info">
+              <div class="info-section">
+                <h2>Sinopsis</h2>
+                <p>
+                    Ketika sebuah desa Emishi diserang oleh seekor babi hutan yang ganas, pangeran muda Ashitaka mempertaruhkan nyawanya untuk membela sukunya. Dengan nafasnya yang sekarat, binatang buas itu mengutuk lengan sang pangeran, memberinya kekuatan iblis sambil perlahan-lahan merenggut nyawanya. Diperintahkan oleh para tetua desa untuk melakukan perjalanan ke arah barat untuk mencari kesembuhan, Ashitaka tiba di Tatara, Kota Besi, di mana dia menemukan dirinya terlibat dalam konflik sengit: Lady Eboshi dari Tatara, yang mendorong penggundulan hutan secara terus menerus, menentang Putri San dan roh-roh suci hutan, yang sangat marah dengan kehancuran yang disebabkan oleh manusia. Ketika kekuatan alam dan manusia yang berlawanan mulai berbenturan dalam perjuangan putus asa untuk bertahan hidup, Ashitaka berusaha mencari harmoni di antara keduanya, sambil berjuang melawan iblis laten di dalam dirinya. Princess Mononoke adalah sebuah kisah yang menggambarkan hubungan antara teknologi dan alam, sekaligus menunjukkan jalan menuju keharmonisan yang dapat dicapai dengan saling menerima.
+                </p>
+              </div>
+              <div class="info-section">
+                <h2>Background</h2>
+                <p>
+                    Pada tahun 1997, film ini memenangkan penghargaan Film Jepang Terbaik, Animasi Terbaik, dan Pilihan Penggemar Film Jepang dalam Penghargaan Film Mainichi ke-52. Pada tahun 1998, film ini memenangkan penghargaan Film Terbaik dalam Japan Academy Awards ke-21.
+                </p>
+              </div>
+        
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse Indonesia
+    </footer>
+
+</body>
+</html>

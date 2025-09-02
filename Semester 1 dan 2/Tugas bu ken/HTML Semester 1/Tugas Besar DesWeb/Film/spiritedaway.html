@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset beberapa gaya default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        
+        
+          /* Kontainer utama */
+          .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          /* Bagian poster/gambar di sisi kiri */
+          .poster {
+            flex: 0 0 300px; /* Lebar tetap poster */
+            max-width: 300px;
+          }
+        
+          .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          /* Bagian teks di sisi kanan */
+          .info {
+            flex: 1;
+            padding: 20px;
+          }
+        
+          .info-section {
+            margin-bottom: 20px;
+          }
+        
+          .info-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 5px;
+          }
+        
+          .info-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        
+          /* Responsif untuk layar lebih kecil */
+          @media (max-width: 768px) {
+            .container {
+              flex-direction: column;
+            }
+            .poster {
+              max-width: 100%;
+            }
+            .info {
+              padding: 15px;
+            }
+          }
+        </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+    <title>Ghilbiverse</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+      <a href="../html/index.html">Beranda</a>
+      <a href="../html/film.html">Film</a>
+      <a href="../html/AboutStudio.html">About Studio</a>
+      <a href="../html/Creator.html">Creator & Staff</a>
+      <a href="../html/aboutme.html">Tentang Kami</a>
+      <a href="../feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Bagian poster/gambar di sisi kiri -->
+            <div class="poster">
+              <img src="https://cdn.myanimelist.net/images/anime/6/79597.jpg" alt="Poster Anime" />
+            </div>
+        
+            <!-- Bagian teks (sinopsis, background, dll) di sisi kanan -->
+            <div class="info">
+              <div class="info-section">
+                <h2>Sinopsis</h2>
+                <p>
+                    Chihiro Ogino yang keras kepala, manja, dan naif, anak berusia 10 tahun, merasa kurang senang saat ia dan orang tuanya menemukan sebuah taman hiburan yang terbengkalai dalam perjalanan menuju rumah baru mereka. Dengan hati-hati masuk ke dalam, dia menyadari bahwa ada lebih banyak hal yang terjadi di tempat ini daripada yang terlihat, karena hal-hal aneh mulai terjadi begitu senja tiba. Penampakan hantu dan makanan yang mengubah orangtuanya menjadi babi hanyalah permulaan-Chihiro tanpa disadari telah menyeberang ke dunia roh. Sekarang terjebak, dia harus mengumpulkan keberanian untuk hidup dan bekerja di antara para roh, dengan bantuan Haku yang penuh teka-teki dan para pemeran karakter unik yang dia temui di sepanjang jalan.
+                </p><br>
+                <p>
+                    Dengan jelas dan menarik, Sen to Chihiro no Kamikakushi menceritakan kisah perjalanan Chihiro melalui dunia yang tidak dikenalnya saat ia berusaha menyelamatkan orang tuanya dan kembali ke rumah.
+                </p>
+              </div>
+              <div class="info-section">
+                <h2>Background</h2>
+                <p>
+                    Sen to Chihiro no Kamikakushi memegang rekor sebagai film terlaris dalam sejarah Jepang dari tahun 2001 hingga 2020. Hingga Desember 2020, film ini telah mengumpulkan total 31,68 miliar yen dari penjualan box office Jepang dan total 395,8 juta dolar AS di seluruh dunia.
+                </p><br>
+                <p>
+                    Film yang mendapat banyak pujian ini telah memenangkan banyak penghargaan, termasuk Academy Award-lebih dikenal dengan sebutan “Oscar”-untuk Film Animasi Terbaik pada Academy Awards ke-75 pada tahun 2003 serta Golden Bear pada Festival Film Internasional Berlin 2002 (bersama Bloody Sunday). Film ini juga termasuk di antara 10 besar dalam daftar “50 film yang harus Anda tonton pada usia 14 tahun” dari British Film Institute.
+                </p><br>
+                <p>
+                    Versi bahasa Inggris dari Sen to Chihiro no Kamikakushi disulihsuarakan oleh Walt Disney Pictures dan ditayangkan pada tahun 2002. Film ini dirilis dalam format DVD dan VHS di Amerika Utara oleh Buena Vista Home Entertainment pada tahun 2003.
+                </p>
+              </div>
+        
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse Indonesia
+    </footer>
+
+</body>
+</html>

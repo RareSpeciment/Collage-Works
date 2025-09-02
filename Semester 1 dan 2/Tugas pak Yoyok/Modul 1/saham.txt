@@ -1,0 +1,6 @@
+BBCA	Bank Central Asia Tbk PT	100
+ABBA	Mahaka Media Tbk PT	50
+CAMP	Campina Ice Cream Industry Tbk PT	20
+DMND	Diamond Food Industry Tbk PT	0
+EXCL	XL Axiata Tbk PT	50
+HOPE	Harapan Duta Pertiwi Tbk PT	30

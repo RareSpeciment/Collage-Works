@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#p1").click(function() {
+                $(".emu").animate({
+                    top: '-=100px'
+                });
+            });
+
+            $("#p2").click(function() {
+                $(".emu").animate({
+                    top: '+=100px'
+                });
+            });
+
+            $("#p3").click(function(){
+                $(".emu").toggleClass('emus')
+             });
+
+             $("#p4").click(function(){
+                $(".emu").toggleClass('p_gone')
+             });
+        });
+    </script>
+</head>
+<body>
+    <br>
+
+    <div id="buttons">
+        <button id="p1">Move Up</button>
+        <button id="p2">Move Down</button>
+        <button id="p3">Add color</button>
+        <button id="p4">Disappear/Re-appear</button>
+    </div>
+
+    <p class="emu">Make Me Do Stuff!!</p>
+</body>
+</html>

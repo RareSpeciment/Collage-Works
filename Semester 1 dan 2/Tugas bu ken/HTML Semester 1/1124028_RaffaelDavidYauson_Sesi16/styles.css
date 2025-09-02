@@ -1,0 +1,19 @@
+p {
+    width: 230px;
+    float: left;
+    margin: 10px;
+}
+
+h1{
+    width: 230px;
+    float: left;
+    margin: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+.clear{
+    clear: left;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset beberapa gaya default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        
+        
+          /* Kontainer utama */
+          .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          /* Bagian poster/gambar di sisi kiri */
+          .poster {
+            flex: 0 0 300px; /* Lebar tetap poster */
+            max-width: 300px;
+          }
+        
+          .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          /* Bagian teks di sisi kanan */
+          .info {
+            flex: 1;
+            padding: 20px;
+          }
+        
+          .info-section {
+            margin-bottom: 20px;
+          }
+        
+          .info-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 5px;
+          }
+        
+          .info-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        
+          /* Responsif untuk layar lebih kecil */
+          @media (max-width: 768px) {
+            .container {
+              flex-direction: column;
+            }
+            .poster {
+              max-width: 100%;
+            }
+            .info {
+              padding: 15px;
+            }
+          }
+        </style>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+   <title>Ghilbiverse</title>
+   <script src="jquery-3.7.1.js"></script>
+   <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+      <a href="../html/index.html">Beranda</a>
+      <a href="../html/film.html">Film</a>
+      <a href="../html/AboutStudio.html">About Studio</a>
+      <a href="../html/Creator.html">Creator & Staff</a>
+      <a href="../html/aboutme.html">Tentang Kami</a>
+      <a href="../feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Bagian poster/gambar di sisi kiri -->
+            <div class="poster">
+              <img src="https://cdn.myanimelist.net/images/anime/1485/141208.jpg" alt="Poster Anime" />
+            </div>
+        
+            <!-- Bagian teks (sinopsis, background, dll) di sisi kanan -->
+            <div class="info">
+              <div class="info-section">
+                <h2>Sinopsis</h2>
+                <p>
+                    Ketika Perang Dunia II mencapai akhir pada tahun 1945, Jepang menghadapi kehancuran yang meluas dalam bentuk pengeboman Amerika, menghancurkan kota demi kota. Hotaru no Haka, yang juga dikenal sebagai Grave of the Fireflies, adalah kisah tentang Seita dan saudara perempuannya, Setsuko, dua anak Jepang yang kehidupannya hancur akibat perang yang brutal. Mereka telah kehilangan ibu, ayah, rumah, dan prospek masa depan yang cerah-semua konsekuensi tragis dari perang.
+                </p><br>
+                <p>
+                    Sekarang yatim piatu dan tunawisma, Seita dan Setsuko tidak punya pilihan selain mengembara di pedesaan, dilanda kelaparan dan penyakit. Bertemu dengan sikap apatis orang dewasa di sepanjang jalan, mereka menemukan bahwa keadaan yang menyedihkan dapat mengubah orang yang paling baik sekalipun menjadi kejam, namun harapan masa muda mereka bersinar terang dalam menghadapi kesulitan yang tak henti-hentinya, mencegah kakak beradik ini untuk menyerah pada takdir yang tak terelakkan.
+                </p>
+              </div>
+              <div class="info-section">
+                <h2>Background</h2>
+                <p>
+                    Hotaru no Haka didasarkan pada cerita pendek semi-otobiografi tahun 1967 dengan judul yang sama oleh Akiyuki Nosaka, yang berpusat pada pengalamannya selama dan setelah pengeboman bom atom Amerika di Kobe pada tahun 1945, dan dirilis sebagai fitur ganda dengan My Neighbor Totoro.
+                </p><br>
+                <p>
+                    Film yang mendapat banyak pujian ini telah memenangkan banyak penghargaan, termasuk Academy Award-lebih dikenal dengan sebutan “Oscar”-untuk Film Animasi Terbaik pada Academy Awards ke-75 pada tahun 2003 serta Golden Bear pada Festival Film Internasional Berlin 2002 (bersama Bloody Sunday). Film ini juga termasuk di antara 10 besar dalam daftar “50 film yang harus Anda tonton pada usia 14 tahun” dari British Film Institute.
+                </p>
+              </div>
+        
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse Indonesia
+    </footer>
+
+</body>
+</html>

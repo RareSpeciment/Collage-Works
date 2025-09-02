@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Syntax</title>
+
+    <style>
+        h2 {
+            color: orange;
+        }
+    </style>
+
+    <script>
+        function tampilkanSemua() {
+            soal2();
+            soal3();
+            soal4();
+            soal5();
+        }
+    </script>
+</head>
+
+<body onload="tampilkanSemua()">
+
+    <section>
+        <h2>Soal Nomor 1</h2>
+        <script>
+            var a = 10;
+            for (let i = 1; i <= 10; i++) {
+                document.writeln("Bilangan ke = " + (i) + " : " + a + "<br>");
+                a++;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>Soal Nomor 2</h2>
+        <div id="nomor2"></div>
+        <script>
+            function soal2() {
+                let start = 10;
+                let length = 11;
+                let result = "";
+                for (let i = 0; i < length; i++) {
+                    result += (start - i) + "<br>";
+                }
+                document.getElementById("nomor2").innerHTML = result;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>Soal Nomor 3</h2>
+        <div id="nomor3"></div>
+        <script>
+            function soal3() {
+                let n = 25;
+                let sum = 0;
+                let number = 1;
+                let result = "";
+                for (let i = 0; i < n; i++) {
+                    sum += number;
+                    result += number;
+                    if (i < n - 1) result += " + ";
+                    number += 2;
+                }
+                result += " = " + sum + "<br>";
+                document.getElementById("nomor3").innerHTML = result;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>Soal Nomor 4</h2>
+        <div id="nomor4"></div>
+        <script>
+            function soal4() {
+                let n = 5;
+                let result = "";
+                for (let i = 1; i <= n; i++) {
+                    for (let j = 1; j <= i; j++) {
+                        result += i + " ";
+                    }
+                    result += "<br>";
+                }
+                document.getElementById("nomor4").innerHTML = result;
+            }
+        </script>
+    </section>
+    <section>
+        <h2>Soal Nomor 5</h2>
+        <div id="nomor5"></div>
+        <label for="r">masukan jari jari : </label>
+        <input type="text" id="r" name="r"><br>
+        <button type="button" onclick="soal5()">calculate</button>
+        <script>
+            function soal5() {
+                let r = document.getElementById("r").value;
+
+                let result = "";
+
+                if (!isNaN(r) && r > 0) {
+                    let area = Math.PI * r * r;
+                    result += "Luas lingkaran dengan jari-jari " + r + " adalah : " + area.toFixed(2);
+                } else {
+                    result += "Tolong tulislah Ruas";
+                }
+                document.getElementById("nomor5").innerHTML = result;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>Soal Nomor 6</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"><br>
+            <button type="button" onclick="soal6()">Click here</button>
+        </form>
+        <script>
+            function soal6() {
+                let username = document.getElementById("username").value;
+                if (username.trim() === "") {
+                    alert("Username harus di isi!");
+                } else {
+                    alert("Username: " + username);
+                }
+            }
+        </script>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Click handler Demo</title>
+        <link rel="stylesheet" type="text.css" href="/examples.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            $(document).ready(function(){   
+                $("button").click(function(){
+                    $("p.pipi").text("we love you!");
+                });
+            });
+
+            $(document).ready(function(){   
+                $("p.text").click(function(){
+                    $("p.text").text("we care!");
+                });
+            });
+
+            $(document).ready(function(){   
+                $("p.begone").click(function(){
+                    $("p.begone").text("");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <p class="pipi">Not Loaded yet.</p>
+        <p class="text">Not Loaded yet. this is text id.</p>
+        <p class="text">Not Loaded yet.</p>
+        
+        <p class="begone">begone</p>
+        <p class="begone">Not Loaded yet.</p>
+        <p class="begone">Not Loaded yet.</p>
+        <p class="begone">Not Loaded yet.</p>
+        <p class="begone">Not Loaded yet.</p>
+        <p class="begone">Not Loaded yet.</p>
+        <p class="begone">Not Loaded yet.</p>
+        <button type="button">Replace Text</button>
+    </body>
+</html>

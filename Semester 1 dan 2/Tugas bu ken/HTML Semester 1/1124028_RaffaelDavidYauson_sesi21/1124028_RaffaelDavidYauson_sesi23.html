@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transkrip Nilai Murid</title>
+    <link rel="stylesheet" href="java.css"> <!-- File CSS eksternal -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Nilai Murids</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody id="grades">
+
+        </tbody>
+    </table>
+
+    <h1>Transkrip Nilai Murid</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nilai</th>
+                <th>Transkrip</th>
+            </tr>
+        </thead>
+        <tbody id="TTB">
+
+        </tbody>
+    </table>
+
+    <h1>Temperature Conversion</h1>
+
+    <table>
+        <th>
+            <label>
+                <input type="number" id="celsius" onkeyup="convertToFahrenheit()" placeholder="0"> Cel
+            </label>
+            <p></p>
+            <label>
+                <input type="text" id="fahrenheit" readonly> Fah
+            </label>
+        </th>
+    </table>
+
+    <table>
+        <h1>Simple Calculator</h1>
+
+        <th>
+            <input type="number" id="num1" placeholder="First Number">
+            <input type="number" id="num2" placeholder="Second Number">
+            <br><br>
+            <button onclick="Kalkulator('add')">Add</button>
+            <button onclick="Kalkulator('subtract')">Subtract</button>
+            <button onclick="Kalkulator('multiply')">Multiply</button>
+            <button onclick="Kalkulator('divide')">Divide</button>
+            <br><br>
+            <label>
+                Result: <input type="text" id="result" readonly>
+            </label>
+        </th>
+    </table>
+
+    <h1>Background Color</h1>
+    <form>
+        <hr>
+            <label>
+                <input type="radio" name="color" value="pink" onclick="changeBackgroundColor('pink')"> Pink
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="color" value="lightblue" onclick="changeBackgroundColor('lightblue')"> Light Blue
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="color" value="yellow" onclick="changeBackgroundColor('yellow')"> Yellow
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="color" value="purple" onclick="changeBackgroundColor('purple')"> Purple
+            </label>
+    </form>
+</div>
+
+<script src="java.js"></script> 
+</body>
+</html>

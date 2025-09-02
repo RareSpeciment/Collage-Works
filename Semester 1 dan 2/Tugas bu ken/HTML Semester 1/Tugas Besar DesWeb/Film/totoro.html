@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset beberapa gaya default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        
+        
+          /* Kontainer utama */
+          .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          /* Bagian poster/gambar di sisi kiri */
+          .poster {
+            flex: 0 0 300px; /* Lebar tetap poster */
+            max-width: 300px;
+          }
+        
+          .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          /* Bagian teks di sisi kanan */
+          .info {
+            flex: 1;
+            padding: 20px;
+          }
+        
+          .info-section {
+            margin-bottom: 20px;
+          }
+        
+          .info-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 5px;
+          }
+        
+          .info-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        
+          /* Responsif untuk layar lebih kecil */
+          @media (max-width: 768px) {
+            .container {
+              flex-direction: column;
+            }
+            .poster {
+              max-width: 100%;
+            }
+            .info {
+              padding: 15px;
+            }
+          }
+        </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+    <title>Ghilbiverse</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+      <a href="../html/index.html">Beranda</a>
+      <a href="../html/film.html">Film</a>
+      <a href="../html/AboutStudio.html">About Studio</a>
+      <a href="../html/Creator.html">Creator & Staff</a>
+      <a href="../html/aboutme.html">Tentang Kami</a>
+      <a href="../feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Bagian poster/gambar di sisi kiri -->
+            <div class="poster">
+              <img src="https://cdn.myanimelist.net/images/anime/4/75923.jpg" alt="Poster Anime" />
+            </div>
+        
+            <!-- Bagian teks (sinopsis, background, dll) di sisi kanan -->
+            <div class="info">
+              <div class="info-section">
+                <h2>Sinopsis</h2>
+                <p>
+                    Pada tahun 1950-an di Jepang, Tatsuo Kusakabe memindahkan dirinya dan kedua putrinya, Satsuki dan Mei, ke pedesaan agar lebih dekat dengan ibu mereka, yang dirawat di rumah sakit karena penyakit jangka panjang. Saat kedua gadis ini mulai mengenal kehidupan pedesaan, suatu hari Mei bertemu dengan makhluk kecil seperti kelinci di halaman rumahnya. Mengejarnya ke dalam hutan, ia menemukan “Totoro” - roh hutan raksasa dan mistis yang segera berteman dengannya. Tak lama kemudian, Satsuki juga bertemu dengan Totoro, dan kedua gadis itu tiba-tiba menemukan kehidupan mereka dipenuhi dengan petualangan magis di alam dan makhluk-makhluk hutan yang fantastis.
+                </p>
+              </div>
+              <div class="info-section">
+                <h2>Background</h2>
+                <p>
+                    Pada tahun 1988, Tonari no Totoro memenangkan penghargaan Film Terbaik dan Ofuji Noburo di Penghargaan Film Mainichi, Penghargaan Khusus di Penghargaan Pita Biru ke-31, Grand Prix di Penghargaan Anime Animage, dan Film Terbaik dan Penghargaan Pilihan Pembaca: Penghargaan Film Jepang Terbaik di Kinema Junpo Awards.
+                </p>
+              </div>
+        
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse Indonesia
+    </footer>
+
+</body>
+</html>

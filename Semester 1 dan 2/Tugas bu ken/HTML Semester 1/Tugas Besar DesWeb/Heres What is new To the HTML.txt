@@ -1,0 +1,4 @@
+1. Lebih responsive ke semua device
+2. Text mempunyai link yang di tuju
+3. ui lebih enak diliat
+4. maaf kalua ada yang lupa aku

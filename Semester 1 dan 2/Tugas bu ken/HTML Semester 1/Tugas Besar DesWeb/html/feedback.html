@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+    <title>Ghilbiverse</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="film.html">Film</a>
+        <a href="AboutStudio.html">About Studio</a>
+        <a href="Creator.html">Creator & Staff</a>
+        <a href="aboutme.html">Tentang Kami</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <section class="feedback">
+            <h2>Forum Feedback</h2>
+            <p>Berikan masukan atau saran Anda untuk komunitas Ghilbiverse!</p>
+            <form id="feedbackForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis masukan Anda di sini..." required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="feedbackDisplay"></div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse
+    </footer>
+
+</body>
+</html>

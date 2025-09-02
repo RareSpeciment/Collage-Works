@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset beberapa gaya default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        
+        
+          /* Kontainer utama */
+          .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan sedikit transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+        
+          /* Bagian poster/gambar di sisi kiri */
+          .poster {
+            flex: 0 0 300px; /* Lebar tetap poster */
+            max-width: 300px;
+          }
+        
+          .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        
+          /* Bagian teks di sisi kanan */
+          .info {
+            flex: 1;
+            padding: 20px;
+          }
+        
+          .info-section {
+            margin-bottom: 20px;
+          }
+        
+          .info-section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 5px;
+          }
+        
+          .info-section p {
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        
+          /* Responsif untuk layar lebih kecil */
+          @media (max-width: 768px) {
+            .container {
+              flex-direction: column;
+            }
+            .poster {
+              max-width: 100%;
+            }
+            .info {
+              padding: 15px;
+            }
+          }
+        </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel = "icon" href = "../images/Logo.png" type = "image/x-icon">
+    <title>Ghilbiverse</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ghilbiverse</h1>
+        <p>Situs untuk para penggemar Studio Ghibli</p>
+    </header>
+
+    <nav>
+      <a href="../html/index.html">Beranda</a>
+      <a href="../html/film.html">Film</a>
+      <a href="../html/AboutStudio.html">About Studio</a>
+      <a href="../html/Creator.html">Creator & Staff</a>
+      <a href="../html/aboutme.html">Tentang Kami</a>
+      <a href="../feedback.html">Feedback</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Bagian poster/gambar di sisi kiri -->
+            <div class="poster">
+              <img src="https://cdn.myanimelist.net/images/anime/1470/138723.jpg" alt="Poster Anime" />
+            </div>
+        
+            <!-- Bagian teks (sinopsis, background, dll) di sisi kanan -->
+            <div class="info">
+              <div class="info-section">
+                <h2>Sinopsis</h2>
+                <p>
+                    Arsitektur yang campur aduk, hiruk-pikuk uap yang mendesis dan sendi-sendi yang berderit, dengan asap yang mengepul darinya saat bergerak sendiri... Kastil itu adalah rumah bagi penyihir megah Howl, yang terkenal dengan kehebatan sihirnya dan juga seorang perayu wanita-atau begitulah desas-desus yang beredar di kota kecil Sophie Hatter. Sophie, sebagai anak perempuan sederhana dari seorang pembuat topi, tidak berharap banyak akan masa depannya dan merasa puas dengan bekerja keras di toko.
+                </p><br>
+                <p>
+                    Namun, kehidupan Sophie yang sederhana berubah menjadi menarik saat dia terjerat dalam situasi yang mengganggu, dan penyihir misterius muncul untuk menyelamatkannya. Sayangnya, pertemuan ini, meski singkat, memacu Penyihir Pembuang yang cemburu dan pendendam-dalam kecemburuan yang disebabkan oleh perselisihan masa lalu dengan Howl-untuk mengutuk gadis itu, mengubahnya menjadi seorang wanita tua.
+                </p><br>
+                <p>
+                    Dalam upaya untuk kembali normal, Sophie harus menemani Howl dan segudang teman eksentrik-mulai dari iblis api yang kuat hingga orang-orangan sawah yang bisa melompat-di kastil tempat tinggalnya, dalam sebuah petualangan berbahaya saat perang berkecamuk dan menghancurkan kerajaan mereka.
+                </p>
+              </div>
+              <div class="info-section">
+                <h2>Background</h2>
+                <p>
+                    Howl's Moving Castle tayang perdana di Festival Film Venesia pada tahun 2004 dan kemudian dirilis di bioskop-bioskop Jepang pada bulan November, menjadikannya salah satu dari tiga film Studio Ghibli yang tidak dirilis pada bulan Juli.
+                </p><br>
+                <p>
+                    Pada tahun 2004, film ini memenangkan Penghargaan Osella untuk Pencapaian Teknis di Festival Film Venesia ke-61, Film Jepang Terbaik Secara Keseluruhan di Penghargaan Film Mainichi dan Penghargaan Keunggulan, Animasi di Festival Seni Media Jepang. Pada tahun 2005, film ini memenangkan Animation of the Year di Tokyo International Anime Fair dan Audience Award di Maui Film Festival.
+                </p><br>
+                <p>
+                    Pada tahun 2006, film ini dinominasikan sebagai Fitur Animasi Terbaik di Academy Award ke-78, namun kalah dari film Wallace and Gromit: Kutukan Kelinci yang Tak Terlihat.
+                </p>
+              </div>
+        
+    </main>
+
+    <footer>
+        &copy; 2024 Ghilbiverse Indonesia
+    </footer>
+
+</body>
+</html>

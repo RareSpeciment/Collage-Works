@@ -1,0 +1,74 @@
+body{
+    background-color: bisque;
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+li{
+    margin-left: -40px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    color: brown;
+    font-size: 20px;
+}
+
+.facebook{
+    width: 65px;
+    height: 55px;
+    background: url('social.jpg') -5px -0px;
+}
+
+.link{
+    width: 65px;
+    height: 55px;
+    background: url('social.jpg') -196px -0px;
+}
+
+.youtube{
+    width: 65px;
+    height: 55px;
+    background: url('social.jpg') -516px -0px;
+}
+
+.twitter{
+    width: 65px;
+    height: 55px;
+    background: url('social.jpg') -69px -0px;
+}
+
+.facebook:hover{
+    background: url('social.jpg') -5px -64px;
+}
+
+.link:hover{
+    background: url('social.jpg') -196px -64px;
+}
+
+.youtube:hover{
+    background: url('social.jpg') -516px -64px;
+}
+
+.twitter:hover{
+    background: url('social.jpg') -69px -64px;
+}
+
+div{
+    float: left;
+    margin-left: 3px;
+}
